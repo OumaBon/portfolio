@@ -7,26 +7,46 @@
     color: red;
 }
 
+/* CSS */
 
-.container{
-    display: flex;
-    flex-direction: row;
-
+.container {
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.navbar{
+.navbar-header {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    flex: 1;
+}
+
+.navbar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list {
     list-style: none;
-    justify-items: center;
-
+    display: flex;
+    gap: 20px; 
+    margin: 0;
+    padding: 0;
 }
 
-.btn{
-    height: 40px;
-    width: 120px;
-    background-color: red;
-    color: #ffff;
-    border: 1px, solid red;
-    border-radius: 16px;
+.btn {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;    /* Adjust font size as needed */
+    width: 150px;       /* Set a specific width */
+    height: 50px;       /* Set a specific height */
+    border-radius: 5px; /* Adjust border radius as needed */
 }
